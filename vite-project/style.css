@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&family=Source+Code+Pro:ital,wght@0,200;1,200&display=swap');
+
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main{
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote{
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header{
+  background-color: rgba(0, 0, 0, 0.8);
+  grid-column: 2 / span 5;
+  font-size: 1.5rem;
+  padding: 2rem;
+  margin-top: 100px;
+  padding: 0;
+}
+
+header p{
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 500;
+  font-style:italic;
+}
+
+section{
+  grid-column: 2/8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  /* margin-bottom: var(--spacing); */
+  margin-bottom: 400px;
+  
+}
+
+blockquote{
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 6;
+  margin-bottom: var(--spacing);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-style: italic;
+}
+
+/* blockquote p{
+
+} */
+
+.light{
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 1000px;
+  grid-column: 8/13;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+.firstsection{
+  margin-top: 400px;
+}
+
+.darkbg{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.darkbg p{
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.left{
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.secondSection{
+  background-color: rgba(0, 0, 0, 0.5);
+}
