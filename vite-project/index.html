@@ -10,10 +10,12 @@
   <body>
     <canvas id="bg"></canvas>
       <main>
-        <header>
-          <h1>Fidias Jimenez</h1>
-          <p>Bienvenidos a mi portafolio.🌠</p>
-        </header>
+        <div class="container">
+          <header>
+            <h1>Fidias Jimenez</h1>
+            <p>Bienvenidos a mi portafolio.🌠</p>
+          </header>
+        </div>
 
         <blockquote>
           <p>Your time is limited, so don't waste it living someone else's life. --Steve Jobs</p>
@@ -50,66 +52,116 @@
         </section>
 
         <blockquote>
-          <p>The best way out is always through --Robert Frost</p>
+          <p>“Success is a lousy teacher. It seduces smart people into thinking they can’t lose.” -- Bill Gates.</p>
         </blockquote>
 
         <section class="left">
           <div class="secondSection">
-            <h2>Formación Educativa 👨‍🎓</h2>
-            <h3>Educación Bachiller:</h3>
-            <h4>Colegio Técnico Contable C.T.C.</h4>
+            <h3>Formación Educativa 👨‍🎓</h3>
+            <h5>Certificaciones:</h5>
+            <ul>
+              <li>Certificado en uso de Python con bases de datos.</li>
+              <li>Creación de páginas web interactivas con JavaScript y Three.js.</li>
+              <li>Creación de páginas web con HTML.</li>
+              <li>Construcción de sitios web con Wordpress.</li>
+              <li>Creación de hojas para Gestionar Proyectos en Microsoft Excel.</li>
+            </ul>
+            <h5>Educación Bachiller:</h5>
             <ul>
               <li>Bachiller técnico vocacional opción contador.</li>
               <li>Bachiller técnico vocacional opción software.</li>
               <li>Bachiller técnico vocacional en uso de equipo administrativo de oficina.</li></li>
             </ul>
             <h3>Educación Universitaria:</h3>
-            <h4>Universidad Gerardo Barrios.</h4>
             <ul>
               <li>Ingeniero en sistemas y redes informáticas.</li>
-            </ul>
-            <h3>Certificaciones:</h3>
-            <ul>
-              <li>Certificado en uso de Python con bases de datos.</li>
-              <li>Creación páginas web interactriva con JavaScript.</li>
-              <li>Creación de páginas web con HTML.</li>
-              <li>Construcción de sitios web con Wordpress.</li>
-              <li>Creación de hojas para Gestionar Proyectos en Microsoft Excel.</li>
             </ul>
             </div>
         </section>
 
-        <section class="light">
+        <section class="light2">
           <h2>Experiencias laborales. 👨‍🔬</h2>
           <ul>
-            <li>-</li>
-            <li>-</li>
-            <li>-</li>
-            <li>-</li>
-            <li>-</li>
-            <li>-</li>
+            <li>Contador del Despacho Contable Cortez Argueta.</li>
+            <li>Creador y ensamblador de circuitos.</li>
+            <li>Programador Fox Pro.</li>
+            <li>Agente de Callcenter en Ingles - Teleperformance.</li>
           </ul>
         </section>
 
         <section class="left">
-          <div class="secondSection">
-            <h2>Proyectos personales.👽</h2>
-            <ul>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-            </ul>
+          <div class="secondSection2">
+            <h2>Proyectos personales.</h2>
           </div>
         </section>
+        <!-- Proyectos personales -->
+        <div class="card">
+          <div class="circle" style="--clr: #56f401;">
+              <img src="logothreejs.png" alt="logo" class="logo">
+          </div>
+          <div class="content">
+              <h2>Portafolio 3D</h2>
+              <p>El actual portafolio fue elaborado haciendo uso de la libreria three.js la cual permite utilizar elementos 3D en la web.</p>
+              <a href="#">GitHub</a>
+          </div>
+          <img src="threeicon.png" alt="product" class="product_img">
+      </div>
+
+      <div class="card">
+        <div class="circle" style="--clr: #f40103;">
+            <img src="calculator.png" alt="logo" class="logo">
+        </div>
+        <div class="content">
+            <h2>Calculadora</h2>
+            <p>Creacion de calculadora con efecto de transparencia utilizando DOM.</p>
+            <a href="#">GitHub</a>
+        </div>
+        <img src="calculator.png" alt="product" class="product_img">
+    </div>
+
         <blockquote>
-          <p>Thanks for watching!</p>
+          <p>Buenos deseos para ti viajero, recuerda que cada pequeño paso cuenta para llegar a tu meta!</p>
         </blockquote>
       </main>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".container"), {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2,
+        });
+
+        VanillaTilt.init(document.querySelector(".firstsection"),{
+            max: 6,
+            speed: 400,
+            "max-glare": 0.1
+        });
+
+        VanillaTilt.init(document.querySelector(".light"),{
+            max: 10,
+            speed: 400,
+            "max-glare": 0.2
+        });
+
+        VanillaTilt.init(document.querySelector(".light2"),{
+            max: 10,
+            speed: 400,
+            "max-glare": 0.2
+        });
+
+        VanillaTilt.init(document.querySelector(".secondSection"),{
+            max: 10,
+            speed: 400,
+            "max-glare": 0.2
+        });
+        VanillaTilt.init(document.querySelector(".secondSection2"),{
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2
+        });
+    </script>
   </body>
 </html>

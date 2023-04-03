@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&family=Source+Code+Pro:ital,wght@0,200;1,200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&family=Source+Code+Pro:ital,wght@0,200;1,200&family=Trispace:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100;200;300&display=swap');
 canvas{
   position: fixed;
   top: 0;
@@ -19,25 +20,40 @@ main{
   grid-template-columns: repeat(12, 1fr);
 }
 
-h1, h2, h3, blockquote{
-  font-family: 'Source Code Pro', sans-serif;
+h1, h2, h3, h4, h5, blockquote{
+  /* font-family: 'Source Code Pro', sans-serif; */
+  font-family: 'Press Start 2P', cursive;
   font-weight: 700;
   font-style: normal;
 }
 
-header{
-  background-color: rgba(0, 0, 0, 0.8);
+.container{
+  background-color: rgba(0, 0, 0, 0.3);
   grid-column: 2 / span 5;
   font-size: 1.5rem;
   padding: 2rem;
   margin-top: 100px;
+  margin-bottom: 20px;
   padding: 0;
+
+  /* Transparencia */
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 }
 
 header p{
-  font-family: 'Source Code Pro', sans-serif;
+  /* font-family: 'Source Code Pro', sans-serif; */
+  font-family: 'Press Start 2P', cursive;
   font-weight: 500;
-  font-style:italic;
+  
 }
 
 section{
@@ -59,17 +75,48 @@ blockquote{
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
   font-style: italic;
+
+  /* */
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 }
-
-/* blockquote p{
-
-} */
 
 .light{
   background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 1200px;
+  grid-column: 8/13;
+  font-family: 'M PLUS Code Latin', sans-serif;
+
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  gap: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.light2{
+  background-color: rgba(0, 0, 0, 0.5);
   margin-top: 1000px;
   grid-column: 8/13;
-  font-family: 'Source Code Pro', sans-serif;
+  font-family: 'M PLUS Code Latin', sans-serif;
+
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  gap: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 }
 
 .firstsection{
@@ -78,20 +125,179 @@ blockquote{
 
 .darkbg{
   background-color: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+
+  padding: 10px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  gap: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 }
 
 .darkbg p{
-  font-family: 'Source Code Pro', sans-serif;
+  /* font-family: 'Source Code Pro'; */
+  font-family: 'M PLUS Code Latin', sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 .left{
-  font-family: 'Source Code Pro', sans-serif;
+  font-family: 'M PLUS Code Latin', sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 .secondSection{
   background-color: rgba(0, 0, 0, 0.5);
+
+  padding: 10px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  gap: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.secondSection2{
+  background-color: rgba(0, 0, 0, 0.5);
+
+  padding: 10px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  gap: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+/* ////////////////////////////////////////////////////////Esto es prueba/////////////////////////////////////////////////////////////////// */
+.card{
+  grid-column: 4 / 8;
+  margin-bottom: 350px;
+}
+
+.card{
+  font-family: 'M PLUS Code Latin', sans-serif;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.card:hover{
+  width: 600px;
+  transition-delay: 0.5s;
+}
+
+.card .circle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+}
+
+.card .circle::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: #191919;
+  border: 8px solid var(--clr);
+  filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+  transition: 0.5s, background 0.5s;
+  transition-delay: 0.75s,1s;
+}
+
+.card:hover .circle::before{
+  transition-delay: 0.5s;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: var(--clr);
+}
+
+.card .circle .logo{
+  position: relative;
+  width: 250px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.card:hover .circle .logo{
+  transform: scale(0);
+  transition-delay: 0s;
+}
+
+.card .product_img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0) rotate(315deg);
+  height: 300px;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover .product_img{
+  top: 25%;
+  left: 100%;
+  height: 500px;
+  transform: translate(-50%,-50%) scale(0.5) rotate(15deg);
+}
+
+.card .content{
+  position: absolute;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+}
+
+.card:hover .content{
+  transition-delay: 0.75s;
+  opacity: 1;
+  visibility: visible;
+  left: 20px;
+}
+
+.card .content h2{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
+.card .content p{
+  color: #000000;
+}
+
+.card .content a{
+  position: relative;
+  color: #111;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
 }

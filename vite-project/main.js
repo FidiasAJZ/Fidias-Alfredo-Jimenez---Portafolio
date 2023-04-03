@@ -23,7 +23,7 @@ const geometry = new THREE.TorusGeometry(10,1,16,100);
 const material = new THREE.MeshStandardMaterial({color: 0xFF6347});
 const torus = new THREE.Mesh(geometry, material);
 
-scene.add(torus);
+// scene.add(torus);
 
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(5,5,5);
@@ -91,7 +91,7 @@ const moon = new THREE.Mesh(
 
 scene.add(moon);
 
-const jupeterTexture = new THREE.TextureLoader().load('jupeqb.jpg');
+const jupeterTexture = new THREE.TextureLoader().load('jupe.jpg');
 
 const jupiter = new THREE.Mesh(
   new THREE.SphereGeometry(10,32,32),
@@ -144,12 +144,23 @@ function moveCamera(){
 
 document.body.onscroll = moveCamera;
 
+//Animacion de elementos
 function animate(){
   requestAnimationFrame(animate);
 
-  torus.rotation.x += 0.01;
-  torus.rotation.y += 0.005;
-  torus.rotation.z += 0.01;
+  // torus.rotation.x += 0.01;
+  // torus.rotation.y += 0.005;
+  // torus.rotation.z += 0.01;
+
+  fidias.rotation.y += 0.005;
+  fidias.rotation.z += 0.005;
+  fidias.rotation.x += 0.005;
+
+  moon.rotation.z += 0.009;
+
+  jupiter.rotation.x += 0.009;
+
+  ground.rotation.y += 0.005;
 
   renderer.render(scene, camera);
 }
